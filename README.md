@@ -19,10 +19,8 @@
 FLog("flutter_log demo");
 
 // mode：打印模式（默认值为debug）
-FLog("flutter_log demo", mode: FLogMode.values[_modeIndex]);
+FLog("flutter_log demo", mode: FLogMode.error);
 ```
-
-
 
 `mode` 枚举如下：
 
