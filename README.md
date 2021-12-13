@@ -47,7 +47,7 @@ dependencies:
 
 ## 相关文章
 
-[Flutter - 打印好用的Debug日志](https://juejin.im/post/59ee05346fb9a0452845a7e8) -- [【个人博客】](https://linxunfeng.top/2020/06/26/flutter/flutter%20-%20打印好用的debug日志/)
+[Flutter - 打印好用的Debug日志](https://juejin.cn/post/6844904199558283271) -- [【个人博客】](https://linxunfeng.top/2020/06/26/flutter/flutter%20-%20打印好用的debug日志/)
 [【掘金】](https://juejin.cn/post/6844904199558283271)
 [【全栈行动】](https://fullstackaction.com/pages/a9e62e/)
 
