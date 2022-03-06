@@ -17,7 +17,7 @@
 
 ```yaml
 dependencies:
-  photo: $latest_version
+  alog: $latest_version
 ```
 
 
