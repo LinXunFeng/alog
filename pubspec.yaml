@@ -1,6 +1,6 @@
 name: alog
 description: A flutter log tool for developing.
-homepage: https://github.com/LinXunFeng/flutter_log
+homepage: https://github.com/LinXunFeng/alog
 version: 1.0.0
 
 environment:
