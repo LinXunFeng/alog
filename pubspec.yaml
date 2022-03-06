@@ -1,0 +1,16 @@
+name: flutter_log
+description: A flutter log tool for developing.
+homepage: https://github.com/LinXunFeng/flutter_log
+version: 1.0.0
+
+environment:
+  sdk: ">=2.16.1 <3.0.0"
+
+dependencies:
+  stack_trace: ^1.10.0
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
