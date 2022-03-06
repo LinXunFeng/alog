@@ -15,14 +15,14 @@
 import 'package:flutter/foundation.dart';
 import 'package:stack_trace/stack_trace.dart';
 
-enum FLogMode {
+enum ALogMode {
   debug,    // 💚 DEBUG
   warning,  // 💛 WARNING
   info,     // 💙 INFO
   error,    // ❤️ ERROR
 }
 
-String FLog(dynamic msg, { FLogMode mode = FLogMode.debug }) {
+String ALog(dynamic msg, { ALogMode mode = ALogMode.debug }) {
   if (kReleaseMode) { // release模式不打印
     return "";
   }
@@ -32,7 +32,7 @@ String FLog(dynamic msg, { FLogMode mode = FLogMode.debug }) {
   // 取出所有信息帧
   final frames = chain.toTrace().frames;
   // 找到当前函数的信息帧
-  final idx = frames.indexWhere((element) => element.member == "FLog");
+  final idx = frames.indexWhere((element) => element.member == "ALog");
   if (idx == -1 || idx+1 >= frames.length) {
     return "";
   }
@@ -41,16 +41,16 @@ String FLog(dynamic msg, { FLogMode mode = FLogMode.debug }) {
 
   var modeStr = "";
   switch(mode) {
-    case FLogMode.debug:
+    case ALogMode.debug:
       modeStr = "💚 DEBUG";
       break;
-    case FLogMode.warning:
+    case ALogMode.warning:
       modeStr = "💛 WARNING";
       break;
-    case FLogMode.info:
+    case ALogMode.info:
       modeStr = "💙 INFO";
       break;
-    case FLogMode.error:
+    case ALogMode.error:
       modeStr = "❤️ ERROR";
       break;
   }

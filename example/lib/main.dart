@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_log/flutter_log.dart';
+import 'package:alog/alog.dart';
 
 void main() => runApp(MyApp());
 
@@ -30,7 +30,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("flutter_log demo"),
+        title: Text("alog demo"),
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -52,7 +52,7 @@ class _HomePageState extends State<HomePage> {
       onPressed: () {
         setState(() {
           // 打印，并显示结果
-          _printStr = FLog("flutter_log demo - $_modeIndex", mode: FLogMode.values[_modeIndex]);
+          _printStr = ALog("alog demo - $_modeIndex", mode: ALogMode.values[_modeIndex]);
           _modeIndex += 1;
           if (_modeIndex > 3) {
             _modeIndex = 0;

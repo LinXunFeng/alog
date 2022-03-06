@@ -15,17 +15,17 @@
 ## 使用
 
 ```dart
-// 直接使用FLog
-FLog("flutter_log demo");
+// 直接使用aALog
+ALog("flutter_log demo");
 
 // mode：打印模式（默认值为debug）
-FLog("flutter_log demo", mode: FLogMode.error);
+ALog("flutter_log demo", mode: ALogMode.error);
 ```
 
 `mode` 枚举如下：
 
 ```dart
-enum FLogMode {
+enum ALogMode {
   debug,    // 💚 DEBUG
   warning,  // 💛 WARNING
   info,     // 💙 INFO
