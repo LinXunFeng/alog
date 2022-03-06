@@ -11,8 +11,26 @@
 
 ![](./some_asset/display.png)
 
+## 安装
+
+`pubspec.yaml` 中添加依赖
+
+```yaml
+dependencies:
+  photo: $latest_version
+```
+
+
 
 ## 使用
+
+导包
+
+```dart
+import 'package:alog/alog.dart';
+```
+
+
 
 ```dart
 // 直接使用aALog
